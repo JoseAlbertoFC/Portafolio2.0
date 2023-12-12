@@ -1,28 +1,24 @@
-import { useState } from 'react'
+import { Routes, Route } from "react-router-dom";
 import Home from './views/home/home'
-import Contact from './components/contact/contact'
-import Projects from './components/projects/projects'
+import Detail from "./views/detail/detail"
 import Navbar from './components/navbar/navbar'
-import Cards from './components/cards/cards'
-import Card from './components/card/card'
 import './App.css'
 
 
 function App() {
 
   return (
-    <>
+
       <div>
         <Navbar/>
-        <h1>Portafolio Nivel Dios Ultra Instinto Senior</h1>
-        <Home/>
-        <Contact/>
-        <Projects/>
-        <Cards/>
-        <Card/>
-        </div>
-    </>
-  )
+        <h1>Super Portafolio Ultrainstinto modo Sabio, Jokage de la aldea escondida entre los Programadores, creador de Empleos!!!!</h1>
+        <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/projects/:id" element={<Detail />} />
+        </Routes>
+      </div>
+   
+  );
 }
 
 export default App
