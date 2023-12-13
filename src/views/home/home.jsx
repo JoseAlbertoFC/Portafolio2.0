@@ -1,10 +1,16 @@
-import React from 'react'
-import "./home.css"
+import React from "react";
+import Contact from "../../components/contact/contact"
+import Projects from "../../components/projects/projects";
+import "./home.css";
 
 function Home() {
   return (
-    <div>Esta es la vista del Home</div>
-  )
+    <div>
+      <div>Esta es la vista del Home</div>
+      <Contact />
+      <Projects />
+    </div>
+  );
 }
 
-export default Home
+export default Home;
