@@ -1,10 +1,21 @@
-import React from 'react'
-import "./card.css"
+import React from "react";
+import { Link } from "react-router-dom";
+import "./card.css";
 
-const Card = () => {
+const Card = ({ project }) => {
+  const { id, name, image, url } = project;
   return (
-    <div>Este es el componente Card</div>
-  )
-}
+    <div>
+      <Link to={`/projects/${id}`}>
+        <div>Este es el componente Card</div>
+        <img src={image} alt="Image Not Found" />
+        <h2>{name}</h2>
+        <Link to={url} target="_blank">
+          <button>Project Link</button>
+        </Link>
+      </Link>
+    </div>
+  );
+};
 
-export default Card
+export default Card;
