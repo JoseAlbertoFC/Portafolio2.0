@@ -1,7 +1,6 @@
 import React from "react";
-import Contact from "../../components/contact/contact"
+import Contact from "../../components/contact/contact";
 import Projects from "../../components/projects/projects";
-import "./home.css";
 
 function Home() {
   return (

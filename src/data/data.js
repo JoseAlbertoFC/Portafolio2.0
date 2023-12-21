@@ -1,3 +1,8 @@
+import BSBlack from "../images/black-background.jpg"
+import BSWhite from "../images/white-background.jpg"
+import Flags from "../images/Mundo_hecho_de_Banderas.gif"
+import GoTrip from "../images/goTrip.jpg"
+
 const Data = [
   {
     id: 1,

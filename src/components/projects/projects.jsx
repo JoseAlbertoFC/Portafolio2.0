@@ -6,7 +6,7 @@ const Projects = () => {
   return (
     <div>
       <div>Este es el componente Projects</div>
-      
+      <Cards/>
     </div>
   );
 };
