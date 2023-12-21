@@ -1,0 +1,28 @@
+.card-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #696e79;
+  border: 3px solid transparent;
+  border-radius: 3vw; /* Use a percentage of the viewport width for border-radius */
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  padding: 5vw; /* Use a percentage of the viewport width for padding */
+  transition: transform 0.3s ease-out, border-color 0.3s ease-out;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  max-width: 400px; /* Set a maximum width to avoid overly wide containers */
+  margin: auto; /* Center the container horizontally */
+}
+
+.card-container:hover {
+  transform: translateY(-5px);
+  background-color: #6c737e;
+  border-color: #01c38d;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 600px) {
+  .card-container {
+    padding: 10vw; /* Adjust padding for smaller screens */
+    border-radius: 5vw; /* Adjust border-radius for smaller screens */
+    max-width: none; /* Remove maximum width for smaller screens */
+  }
+}

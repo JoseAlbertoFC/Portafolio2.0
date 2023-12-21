@@ -1,0 +1,12 @@
+.cards-list {
+    margin: 20px; /* Adjust margin for smaller screens */
+    display: grid;
+    grid-template-columns: 1fr; /* Display one column on small screens */
+    grid-gap: 20px;
+  }
+  
+  @media screen and (min-width: 600px) {
+    .cards-list {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid with a minimum column width of 200px */
+    }
+  }
