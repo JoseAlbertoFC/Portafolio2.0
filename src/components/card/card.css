@@ -18,11 +18,16 @@
   border-color: #01c38d;
 }
 
+.mainImage {
+  max-width: 100%;
+  height: auto;
+}
+
 /* Responsive Styles */
 @media screen and (max-width: 600px) {
   .card-container {
-    padding: 10vw; /* Adjust padding for smaller screens */
-    border-radius: 5vw; /* Adjust border-radius for smaller screens */
+    padding: 10px; /* Adjust padding for smaller screens */
+    border-radius: 10px; /* Adjust border-radius for smaller screens */
     max-width: none; /* Remove maximum width for smaller screens */
   }
 }

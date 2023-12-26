@@ -9,7 +9,7 @@ const Card = ({ project }) => {
     <div className="card-container">
       <Link to={`/projects/${id}`}>
         <div>Este es el componente Card</div>
-        <img src={image} alt="Image Not Found" />
+        <img src={image} alt="Image Not Found" className="mainImage" />
       </Link>
       <h2>{name}</h2>
       <Link to={url} target="_blank">

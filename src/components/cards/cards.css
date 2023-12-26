@@ -1,12 +1,24 @@
 .cards-list {
-    margin: 20px; /* Adjust margin for smaller screens */
-    display: grid;
-    grid-template-columns: 1fr; /* Display one column on small screens */
-    grid-gap: 20px;
+  margin: 20px; /* Adjust margin for smaller screens */
+  display: grid;
+  grid-template-columns: 1fr; /* Display one column on small screens */
+  grid-gap: 20px;
+}
+
+@media screen and (min-width: 600px) {
+  .cards-list {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid with a minimum column width of 200px */
   }
-  
-  @media screen and (min-width: 600px) {
-    .cards-list {
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid with a minimum column width of 200px */
-    }
+}
+
+/* Additional Styles for better responsiveness */
+@media screen and (max-width: 400px) {
+  .cards-list {
+    margin: 10px; /* Further reduce margin for smaller screens */
   }
+
+  .card-container {
+    padding: 5px; /* Further reduce padding for smaller screens */
+    border-radius: 5px; /* Further reduce border-radius for smaller screens */
+  }
+}
