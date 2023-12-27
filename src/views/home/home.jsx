@@ -3,7 +3,7 @@ import Contact from "../../components/contact/contact";
 import Projects from "../../components/projects/projects";
 import image from "../../images/JAFCDevPhoto.jpg";
 import { Link } from "react-router-dom"
-import "./home.css";
+import "./home.css"; 
 
 function Home() {
   return (
