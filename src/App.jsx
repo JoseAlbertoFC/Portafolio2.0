@@ -9,8 +9,7 @@ function App() {
     <div>
       <Navbar />
       <h1>
-        Super Portafolio Ultrainstinto modo Sabio, Jokage de la aldea escondida
-        entre los Programadores, creador de Empleos!!!!
+        José Alberto Fuenmayor Coa
       </h1>
       <Routes>
         <Route path="/" element={<Home />} />

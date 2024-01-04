@@ -1,24 +1,20 @@
 .cards-list {
-  margin: 20px; /* Adjust margin for smaller screens */
-  display: grid;
-  grid-template-columns: 1fr; /* Display one column on small screens */
-  grid-gap: 20px;
+  margin: 20px; /* Ajusta el margen según sea necesario */
+  display: flex;
+  flex-wrap: nowrap; /* Hace que las cartas no se envuelvan a la siguiente línea */
+  overflow-x: auto; /* Permite desplazamiento horizontal en dispositivos pequeños */
+  gap: 20px; /* Espaciado entre las cartas */
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (max-width: 600px) {
   .cards-list {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid with a minimum column width of 200px */
+    flex-wrap: wrap; /* Cambia a envoltura en pantallas más pequeñas */
+    justify-content: center; /* Centra las cartas en pantallas más pequeñas */
+    overflow-x: hidden; /* Evita el desplazamiento horizontal en dispositivos pequeños */
   }
-}
 
 /* Additional Styles for better responsiveness */
-@media screen and (max-width: 400px) {
-  .cards-list {
-    margin: 10px; /* Further reduce margin for smaller screens */
-  }
 
-  .card-container {
-    padding: 5px; /* Further reduce padding for smaller screens */
-    border-radius: 5px; /* Further reduce border-radius for smaller screens */
-  }
+
+  
 }
