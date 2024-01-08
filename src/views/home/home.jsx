@@ -8,6 +8,10 @@ import "./home.css";
 function Home() {
   return (
     <div className="home-container">
+      <h1>
+        José Alberto Fuenmayor Coa
+      </h1>
+      <div className="home-box">
       <img className="photo" src={image} alt="Image Not Found." />
       <div className="description">
         <p>
@@ -43,12 +47,15 @@ function Home() {
           Thank you for visiting my portfolio. I look forward to the opportunity
           to collaborate and learn from other professionals in this industry.
         </p>
+        
         <Link to="https://drive.google.com/file/d/1Q3KTqZzFPIAZiEiIVlHfm1QILzT7J7xs/view?usp=drive_link" target="_blank">
         <button>Download CV</button>
         </Link>
+        </div>
       </div>
      
       <Contact />
+      <h1>Projects</h1>
       <Projects />
     </div>
   );

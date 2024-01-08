@@ -8,9 +8,6 @@ function App() {
   return (
     <div>
       <Navbar />
-      <h1>
-        José Alberto Fuenmayor Coa
-      </h1>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/projects/:id" element={<Detail />} />

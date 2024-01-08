@@ -10,6 +10,7 @@
   box-sizing: border-box; /* Include padding and border in the element's total width and height */
   max-width: 400px; /* Set a maximum width to avoid overly wide containers */
   margin: auto; /* Center the container horizontally */
+  height: 100%; /* Set a fixed height for consistent card size */
 }
 
 .card-container:hover {
@@ -20,7 +21,7 @@
 
 .mainImage {
   max-width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 /* Responsive Styles */
@@ -29,5 +30,6 @@
     padding: 10px; /* Adjust padding for smaller screens */
     border-radius: 10px; /* Adjust border-radius for smaller screens */
     max-width: none; /* Remove maximum width for smaller screens */
+    height: auto; /* Allow height to adjust based on content */
   }
 }

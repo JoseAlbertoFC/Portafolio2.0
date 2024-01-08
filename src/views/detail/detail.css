@@ -1,0 +1,32 @@
+.detail-container {
+    align-items: center;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+  }
+  
+  .project-image {
+    height: 440px;
+    width: 270px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    border: 3px solid transparent;
+    animation: borderPulse 1.5s infinite alternate;
+  }
+  
+  .info-container {
+    font-size: 18px;
+    background-color: #696e79;
+    border-radius: 30px;
+    padding: 20px 25px;
+    margin-left: 20px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .info-container:hover {
+    transform: translateY(-5px);
+    background-color: #6c737e;
+  }
+  
