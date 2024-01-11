@@ -1,21 +1,34 @@
-import React from 'react'
-import { Link } from "react-router-dom"
-import "./navbar.css"
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import './navbar.css';
 
 const Navbar = () => {
-  return (
-    <nav>
-      <Link to="/">
-        <button>Home</button>
-      </Link>
-      <Link to="/projects">
-        <button>Projects</button>
-      </Link>
-      <Link to="/contact">
-        <button>Contact</button>
-      </Link>
-    </nav>
-  )
-}
+  const [isOpen, setIsOpen] = useState(false);
 
-export default Navbar
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
+  return (
+    <nav className={`navbar ${isOpen ? 'open' : ''}`}>
+      <div className="menu-icon" onClick={toggleMenu}>
+        <div className="bar"></div>
+        <div className="bar"></div>
+        <div className="bar"></div>
+      </div>
+      <div className="nav-links">
+        <Link to="/" onClick={toggleMenu}>
+          Home
+        </Link>
+        <Link to="/projects" onClick={toggleMenu}>
+          Projects
+        </Link>
+        <Link to="/contact" onClick={toggleMenu}>
+          Contact
+        </Link>
+      </div>
+    </nav>
+  );
+};
+
+export default Navbar;
